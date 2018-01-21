@@ -1,0 +1,45 @@
+body{
+    position: absolute;
+    padding-bottom: 20px;
+    max-height: 100%;
+}
+.wrapper{
+    border: 1px solid black;
+    height: 50%;
+}
+
+.jumbotron{
+    border-bottom: 5px double black;
+    font-family: 'Abril Fatface', cursive;
+}
+#newsFeed{
+    border:1px solid black;
+    height: 15%;
+    width: 80%;
+    overflow: scroll;
+    padding: 1em;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img {
+    width: 20%;
+    height: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 1rem;
+}
+#snip{
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1.5rem;
+    font-family: 'Alegreya', serif;
+
+}
+#title{
+    font-size: 1.5rem;
+}
+footer{
+    top: 0px;
+    position: fixed;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
