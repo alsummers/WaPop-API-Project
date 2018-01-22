@@ -1,19 +1,24 @@
 body{
-    position: absolute;
     padding-bottom: 20px;
-    max-height: 100%;
+    white-space: nowrap;
 }
 .wrapper{
     border: 1px solid black;
-    height: 50%;
+    white-space: nowrap;
 }
 
 .jumbotron{
     border-bottom: 5px double black;
     font-family: 'Abril Fatface', cursive;
+    background-color: lightgrey;
+}
+.display-4{
+    font-size: scale(2);
+    text-decoration: underline;
 }
 #newsFeed{
     border:1px solid black;
+    background-color: lightgrey;
     height: 15%;
     width: 80%;
     overflow: scroll;
@@ -31,6 +36,8 @@ img {
     margin: 1rem;
     padding: 1.5rem;
     font-family: 'Alegreya', serif;
+    background-color: white;
+    box-shadow: 0 2px 8px 0 black;
 
 }
 #title{
