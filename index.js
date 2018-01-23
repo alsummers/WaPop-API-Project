@@ -22,10 +22,15 @@ function uploadNewsFeed(articles) {
     } else {
         var author = $(`<div class="row justify-content-center">${articles.author}</div>`)
     }
+    if(articles.urlToImage == null){
+        var emptyImg = "No Image";
+        var img = $(`<div class="row justify-content-center">${emptyImg}</div>`)
+    } else {
+        var img = $(`<div class="row justify-content-center"><img src="${articles.urlToImage}"></div>`)
+    }
     let row = $(`<div class="col" id="snip"></div>`)
     let title = $(`<div class="row justify-content-center" id="title"><a href=${articles.url}>${articles.title}</a><div>`)
     let desc = $(`<div class="row">${articles.description}</div>`)
-    let img = $(`<div class="row justify-content-center"><img src="${articles.urlToImage}"></div>`)
     row.append(img, title, author, desc);
     return row;
     
